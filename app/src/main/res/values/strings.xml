@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">2048 Orginal App</string>
+    <string name="version_1_0_0">version 1.0.0</string>
+    <string name="new_game">Play Game</string>
+    <string name="_2048">2048</string>
+    <string name="game_over">Game Over!</string>
+    <string name="restart">Restart?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="info_text">Introduction:\n2048 is a popular single-player sliding puzzle game that was created by Italian developer Gabriele Cirulli. The game\'s objective is to slide numbered tiles on a grid to combine them and create a tile with the number 2048. It\'s a simple yet challenging game that has gained widespread popularity for itsaddictive gameplay and strategic elements. \n\nGameplay:\n \nGrid Layout:\n The game is played on a 4x4 grid, and each cell can contain a tile with a power of 2. Tiles start with the number 2, and the player\'s goal is to combine identical tiles by sliding them in four possible directions: up, down, left, or right. \nCombining Tiles: \nWhen two tiles with the same number collide while moving in a certain direction, they merge into a new tile with a value equal to the sum of the original tiles. For example, combining two tiles with a value of 2 creates a tile with a value of 4. \nObjective:\n The ultimate goal is to reach the tile with the value of 2048 by merging tiles. However, players can continue playing beyond this point to achieve higher scores and larger tile values. \nGame Over:\n The game is over when the grid is filled, and no more moves can be made. The player\'s final score is the sum of all merged tiles. \n\nStrategy:\n \nPlanning Moves: \nSuccess in 2048 requires thoughtful planning and strategic thinking. Players must anticipate how their moves will affect the arrangement of tiles on the grid to create opportunities for merging. \nCorner Strategy:\n A common strategy is to keep the highest value tile in one of the corners, usually the bottom-right. This allows for easier manipulation of the remaining tiles. Avoiding Blocked Tiles:\n Players should aim to keep the path open for merging tiles by avoiding situations where a row or column is blocked. \n\nPopularity:\n \nMobile Platforms:\n 2048 gained immense popularity after its release on mobile platforms, particularly on iOS and Android. Its simplicity, combined with the challenge of reaching the elusive 2048 tile, made it a viral sensation. Open Source: One notable aspect of the game is that it is open-source, which means that developers can access and modify the source code. This has led to numerous variants and adaptations of the game.</string>
+    <string name="high_score">HIGH SCORE</string>
+    <string name="score">SCORE</string>
+    <string name="information">Information</string>
+
+</resources>

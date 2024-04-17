@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme._2048OrginalApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">@color/my_app_bg</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme._2048OrginalApp" parent="Base.Theme._2048OrginalApp" />
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- Set your desired background color -->
+        <item name="android:background">#ED9615</item>
+<!--         Set your desired text color -->
+        <item name="android:textColor">#fff</item>
+        <item name="fontFamily">@font/my_font2</item>
+        <!-- Customize other attributes as needed -->
+    </style>
+</resources>

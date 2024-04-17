@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_app_bg">
+
+    <TextView
+        android:id="@+id/text2048"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/my_font2"
+        android:gravity="center"
+        android:text="@string/_2048"
+        android:textColor="#FF5722"
+        android:textSize="64sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/my_font2"
+        android:gravity="center"
+        android:text="@string/information"
+        android:textColor="#BF961C"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2048" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="32sp"
+        android:layout_height="32sp"
+        android:layout_marginStart="24dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_go_back"
+        app:layout_constraintBottom_toBottomOf="@+id/textInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInfo"
+        app:tint="#BF961C" />
+
+    <ScrollView
+        android:id="@id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInfo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8sp"
+            android:fontFamily="@font/my_font2"
+            android:justificationMode="inter_word"
+            android:text="@string/info_text"
+            tools:ignore="UnusedAttribute" />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

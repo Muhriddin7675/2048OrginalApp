@@ -1,0 +1,97 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/dialog_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/bg_score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:src="@drawable/icon_question"
+        app:layout_constraintBottom_toTopOf="@id/dialog_view"
+        app:layout_constraintEnd_toEndOf="@id/dialog_view"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@id/dialog_view"
+        app:layout_constraintTop_toTopOf="@id/dialog_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/my_font2"
+        android:text="Exit"
+        android:textColor="@color/text_color2048"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/messageText"
+        app:layout_constraintEnd_toEndOf="@id/dialog_view"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/messageText"
+        app:layout_constraintTop_toTopOf="@id/dialog_view"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:fontFamily="@font/my_font2"
+        android:gravity="center"
+        android:text="Are you sure you want to exit"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_view"
+        app:layout_constraintEnd_toEndOf="@id/dialog_view"
+        app:layout_constraintStart_toStartOf="@id/dialog_view"
+        app:layout_constraintTop_toTopOf="@id/dialog_view"
+        tools:ignore="UnusedAttribute" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_view"
+        app:layout_constraintEnd_toEndOf="@id/dialog_view"
+        app:layout_constraintStart_toStartOf="@id/dialog_view">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/noButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_score"
+            android:backgroundTint="#DDA553"
+            android:fontFamily="@font/my_font2"
+            android:text="@string/no"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/yesButton"
+            android:backgroundTint="@color/text_color2048"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_score"
+            android:fontFamily="@font/my_font2"
+            android:text="@string/yes"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_app_bg">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newGame"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_appcompat_button"
+        android:elevation="120dp"
+        android:fontFamily="@font/my_font2"
+        android:text="@string/new_game"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_2048"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/info"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="64dp"
+        android:background="@drawable/bg_appcompat_button"
+        android:elevation="120dp"
+        android:fontFamily="@font/my_font2"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_2048"
+        app:layout_constraintTop_toBottomOf="@id/newGame"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="184dp"
+        android:layout_height="160dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_2048"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="@+id/text_2048"
+        app:layout_constraintTop_toBottomOf="@+id/text_2048"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <TextView
+        android:id="@+id/text_2048"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/my_font2"
+        android:gravity="center"
+        android:text="2048 GAME"
+        android:textColor="#BF961C"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
